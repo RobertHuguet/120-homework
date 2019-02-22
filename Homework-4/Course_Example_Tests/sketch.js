@@ -1,6 +1,6 @@
 function setup() {
     createCanvas(800, 500);
-    background('#e3f9c8');
+    background('#57b6c6');
 }
 
 function draw() {
@@ -72,13 +72,13 @@ function draw() {
     //noFill();
     //triangle( 20, 330, 250, 20, 480, 330 );
     //stroke examples
-    noFill();
+    //noFill();
 
-    stroke('red');
-    rect( 20, 20, 300, 100 );
+    //stroke('red');
+    //rect( 20, 20, 300, 100 );
 
-    stroke('green');
-    triangle( 20, 330, 250, 20, 480, 330 );
+    //stroke('green');
+    //triangle( 20, 330, 250, 20, 480, 330 );
 
     stroke('pink');
     fill('yellow');
