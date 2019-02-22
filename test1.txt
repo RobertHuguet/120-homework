@@ -1,9 +1,0 @@
-Name: {Your Name}
-Date: {Todays Date}
-
-This is my first text document for one of Dr. Musick's Media Arts courses.
-
-testing
- changing to work on my own
-
-adding to check
