@@ -26,10 +26,15 @@ function draw() {
     ellipse( 25 ,37.5, 30, 30 );
     fill('rgb(0, 0, 0)');
     ellipse( -25 ,37.5, 30, 30 );
+    triangle(25, 20, -25, 20, 12.5, 10)
+    rotate(radians(180))
+    triangle(25, -20, -25, -20, 12.5, -10)
+    translate(0, -48)
+    triangle(35, -20, -35, -20, 12.5, -40)
+    pop()
+
+    pop()
+
   }
 
 //BODY END****
-
-    pop()
-
-    pop()
