@@ -65,11 +65,13 @@ function draw() {
 //create the lines in a star pattern
   stroke('rgb(192,192,192)');
   strokeWeight(10);
+//first set of lines
   line(lineN, lineN, lineP, lineP);
   line(lineN, lineP, lineP, lineN);
   stroke('rgb(255,215,0)');
 //rotate canvas 45 degrees
   rotate(radians(45));
+//second set of lines at 45 degrees
   line(lineN, lineN, lineP, lineP);
   line(lineN, lineP, lineP, lineN);
   pop();
