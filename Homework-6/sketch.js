@@ -35,7 +35,7 @@ let colorSp1 = {
 function setup() {
 createCanvas(windowWidth, windowHeight);
 background('rgb(18, 184, 201)');
-frameRate(7);
+frameRate(8);
 };
 
 //when the mouse is clicked the background changes to the position of the mouse
@@ -51,18 +51,18 @@ function mouseClicked() {
 function draw() {
   fill(255);
   stroke(1);
-  rect(0, 15, 320, 40);
+  rect(5, 15, 320, 40);
   fill(0);
   noStroke();
-  text("Click the mouse in different places!", 10, 30);
-  text("The colors change based on where you click the mouse.", 10, 45);
+  text("Click the mouse in different places!", 15, 30);
+  text("The colors change based on where you click the mouse.", 15, 45);
 
 // Setup and draw circle
   noStroke();
   colorSp.r = map(mouseX, 0, windowWidth, 0, 255);
   colorSp.g = map(mouseY, 0, windowWidth, 0, 255);
   colorSp.b = floor(random(0, 255));
-  colorSp.b = colorSp.b + (colorSp.b % colorSp.r);
+  colorSp.b = colorSp.b - (colorSp.b % colorSp.r);
   circle.x = ceil(random(0, windowWidth - 20));
   circle.y = ceil(random(0, windowHeight - 20));
   circle.s = floor(random(0, 20));
