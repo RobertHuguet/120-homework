@@ -1,4 +1,4 @@
-//Initialize the locations of 2 ellipse at a global level
+// Initialize the locations of 2 ellipse at a global level
 let circle = {
   x: 0,
   y: 0,
@@ -12,14 +12,14 @@ let circle1 = {
   h: 0
 };
 
-//Global color for background changes
+// Global color for background changes
 let colorBg = {
   r: 0,
   g: 0,
   b: 0
 };
 
-//Global color values for shapes: red, green, blue
+// Global color values for shapes: red, green, blue
 let colorSp = {
   r: 0,
   g: 0,
@@ -38,8 +38,8 @@ background('rgb(18, 184, 201)');
 frameRate(8);
 };
 
-//when the mouse is clicked the background changes to the position of the mouse
-//and a random number from 0 - 255
+// When the mouse is clicked the background changes to the position of the mouse
+// and a random number from 0 - 255
 function mouseClicked() {
   colorBg.r = map(mouseX, 0, windowWidth, 0, 255);
   colorBg.g = map(mouseY, 0, windowHeight, 0, 255);
@@ -68,7 +68,7 @@ function draw() {
   circle.s = floor(random(0, 20));
   fill(colorSp.r, colorSp.g, colorSp.b);
   ellipse(circle.x, circle.y, circle.s);
-
+// Setup and draw ellipse
   colorSp1.r = colorSp.r - random(0, 20);
   colorSp1.g = colorSp.g - random(0, 20);
   colorSp1.b = colorSp.b;
