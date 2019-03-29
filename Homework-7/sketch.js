@@ -4,14 +4,14 @@ let ball = {
 width: 40,
 x: 10,
 y: 10,
-delta_x: 1,
-delta_y: 1,
+delta_x: 2,
+delta_y: 2,
 scale_x: 1,
 scale_y: 1,
 r: 86,
 g: 159,
 b: 195,
-t: 255
+t: 100
 };
 function setup() {
     createCanvas(windowWidth, windowHeight);
@@ -31,7 +31,7 @@ function draw() {
         ball.r = floor(random(256));
         ball.g = floor(random(256));
         ball.b = floor(random(256));
-        ball.t = floor(random(200));
+        ball.t = floor(random(50,151));
         };
 
     if (ball.y >= height - 20 || ball.y <= 0) {
@@ -39,7 +39,7 @@ function draw() {
         ball.r = floor(random(256));
         ball.g = floor(random(256));
         ball.b = floor(random(256));
-        ball.t = floor(random(200));
+        ball.t = floor(random(50,151));
         };
 
     noStroke();
@@ -57,5 +57,5 @@ function draw() {
 function mousePressed() {
     ball.scale_x = map(mouseX, 0, width, 0.5, 10);
     ball.scale_y = map(mouseY, 0, height, 0.5, 10);
-    
+
 };
