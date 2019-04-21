@@ -1,5 +1,5 @@
 
-
+//initialize variables
 let ball = {
 width: 40,
 x: 10,
