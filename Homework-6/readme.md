@@ -1,14 +1,6 @@
 # Empty p5 sketch.
 
-1.Summarize the work you did this homework cycle. Paying particular attention to the individual choices you made.
+I used random numbers assigned to variables and stored in objects. The objects were used to place ellipse on the canvas and assign them different colors and transparency. I also used the mouse click button to reset the canvas and set the background and set the red and green values to something that would match the background.
+When the size of the window is changed, the only part of the screen that is active is what it was changed to. This is because of the use of windowWidth and windowHeight. I decided to keep it this way for the other functionality.
 
-2.What steps did you take to complete the assignment?
-Did you have any problems or issues?
-
-3.How did you solve these? Did you post about these to the class repo issue tracker? Did you receive any useful feedback from your classmates?
-
-4.Is there anything in particular you learned that you would like to discuss further?
-
-5.What issues did you help your fellow classmates out with this past homework cycle?
-
-Current p5 version -> 0.7.1
+I learned how to make cool random art.
