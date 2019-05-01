@@ -1,4 +1,4 @@
-class Square {
+class Ball {
     constructor(x, y, size, r, g, b) {
         this.r = r;
         this.g = g;
@@ -8,13 +8,14 @@ class Square {
         this.x = x;
         this.y = y;
         this.deltaX = random(-1, 1);
-        this.deltaY = random(6);
+        this.deltaY = random(-2, 8);
     }
 
     display() {
         noStroke();
         fill(this.r, this.g, this.b);
-        rect(this.x, this.y, this.size, this.size);
+        ellipse(this.x, this.y, this.size);
+
     }
 
     move() {
@@ -25,15 +26,16 @@ class Square {
     edgeCheck() {
         if (this.y + this.radius >= height || this.y - this.radius <= 0) {
             this.deltaY *= -1;
+
         }
     }
 
-    rectangleCheck(otherSquares, myId) {
-        for (let n = 0; n < otherSquares.length; n++) {
+    ballCheck(otherBalls, myId) {
+        for (let n = 0; n < otherBalls.length; n++) {
 
             if (n != myId) {
-                let d = dist(this.x, this.y, otherSquares[n].x, otherSquares[n].y);
-                let combinedR = this.radius + otherSquares[n].radius;
+                let d = dist(this.x, this.y, otherBalls[n].x, otherBalls[n].y);
+                let combinedR = this.radius + otherBalls[n].radius;
 
                 if (d <= combinedR) {
                     this.deltaX *= -1;
