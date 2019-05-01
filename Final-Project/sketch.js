@@ -5,8 +5,8 @@ let count = 0;
 function setup() {
     createCanvas(windowWidth, windowHeight);
 
-    let firstBall = new Ball(10, 10, 50, 223, 32, 93);
-    balls.push(firstBall);
+    //let firstBall = new Ball(1000, 1000, 50, 223, 32, 93);
+    //balls.push(firstBall);
     frameRate(10);
     background(66, 201, 210);
 }
