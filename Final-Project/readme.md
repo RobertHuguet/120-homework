@@ -1,4 +1,5 @@
 # Final Project
+
 # Interactive Moving Art
 
 I worked on how to get ellipse to interact with each other. I wanted
@@ -23,4 +24,6 @@ If I had more time I wanted to change the shape of the objects from a
   circle to a triangle, but this would take quite a bit of time for me to figure out how to get the triangles to interact with each other and with the circle objects.
 
 #Problems
-I ran into quite a bit of problems when changing things where some of the methods wouldn't work. Usually these were just caused because of a misspelled word or not having the correct parentheses or curly brackets. I also occasionally ran into the problem of the sketch not working at all, I solved this by commenting out the code that I just wrote and fixed it. I had a problem with being able to see where the objects are currently on the canvas when clicking to add to create more movement. I end up getting the objects stuck together, If I had more time to work on it I could have changed the shading or something like that. It ended up looking good and I really enjoyed playing around with it!
+
+I ran into quite a bit of problems when changing things where some of
+  the methods wouldn't work. Usually these were just caused because of a misspelled word or not having the correct parentheses or curly brackets. I also occasionally ran into the problem of the sketch not working at all, I solved this by commenting out the code that I just wrote and fixed it. I had a problem with being able to see where the objects are currently on the canvas when clicking to add to create more movement. I end up getting the objects stuck together, If I had more time to work on it I could have changed the shading or something like that. It ended up looking good and I really enjoyed playing around with it!
